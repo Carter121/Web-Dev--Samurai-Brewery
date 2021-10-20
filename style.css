@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 body {
   font-family: "Lato";
+  overflow-x: hidden;
 }
 .btn {
   border: 1px solid white;

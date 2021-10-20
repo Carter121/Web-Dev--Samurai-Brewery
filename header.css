@@ -1,52 +1,41 @@
 header {
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 25vw;
-  /* z-index: 5; */
-}
-.logo {
-  top: 0.5em;
-  left: 1em;
-  position: absolute;
-  font-size: 3.5em;
-  font-weight: 700;
-  z-index: 20;
-}
-.logo:hover {
-  transform: scale(1.05);
-}
-.logo > a {
-  color: white;
-  text-decoration: none;
-}
-.heading {
-  font-weight: 700;
-  font-size: 4em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-column-gap: 0;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   position: relative;
-  top: 3em;
-  z-index: 2;
+}
+.headTitle {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  z-index: 3;
+  position: absolute;
+  top: 4em;
   text-shadow: 4px 4px 2px rgb(0, 0, 0);
 }
-.header-img > img {
+.headImages {
   position: absolute;
-  top: 0;
-  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.headImages > img {
   width: 100%;
-}
-.header-img {
-  overflow: hidden;
-  width: 100vw;
-}
-.overflow {
-  overflow-x: hidden;
-}
-.barFront {
+  top: 0;
   position: absolute;
-  z-index: 10;
+  z-index: 2;
 }
-.barFront > img {
+.imgFront {
   filter: grayscale();
+  z-index: 4 !important;
+}
+@media only screen and (min-width: 800px) {
+  .headTitle {
+    top: 5em;
+    font-size: 3em;
+  }
 }
