@@ -4,9 +4,9 @@
 .navbar > ul {
   font-size: 1.5em;
   z-index: 5;
-  position: relative;
+  position: absolute;
   top: 1em;
-  right: -25em;
+  right: 1em;
   list-style-type: none;
 }
 .navbar > ul > li > a {
