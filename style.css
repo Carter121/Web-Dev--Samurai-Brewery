@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+body {
+  font-family: "Lato";
+  display: grid;
+  grid-template-rows: auto;
+}
+.flex {
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.btn {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 25%/50%;
+  padding: 0.25em;
+  border-width: 0.25em;
+}

@@ -1,0 +1,52 @@
+header {
+  color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 25vw;
+  /* z-index: 5; */
+}
+.logo {
+  top: 0.5em;
+  left: 1em;
+  position: absolute;
+  font-size: 3.5em;
+  font-weight: 700;
+  z-index: 20;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+.logo > a {
+  color: white;
+  text-decoration: none;
+}
+.heading {
+  font-weight: 700;
+  font-size: 4em;
+  position: relative;
+  top: 3em;
+  z-index: 2;
+  text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}
+.header-img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-img {
+  overflow: hidden;
+  width: 100vw;
+}
+.overflow {
+  overflow-x: hidden;
+}
+.barFront {
+  position: absolute;
+  z-index: 10;
+}
+.barFront > img {
+  filter: grayscale();
+}

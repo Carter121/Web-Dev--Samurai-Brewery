@@ -1,0 +1,10 @@
+.checked {
+  color: orange;
+}
+main {
+  height: 100vh;
+  z-index: 20;
+  border: 2px solid red;
+  top: 158vh;
+  left: 0;
+}
