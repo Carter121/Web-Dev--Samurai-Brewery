@@ -4,7 +4,7 @@ header {
   align-items: center;
   grid-template-columns: auto;
   grid-column-gap: 0;
-  height: 100vh;
+  /* height: 153vh; */
   margin: 0;
   padding: 0;
   position: relative;
@@ -19,23 +19,29 @@ header {
   text-shadow: 4px 4px 2px rgb(0, 0, 0);
 }
 .headImages {
-  position: absolute;
+  position: relative;
   min-width: 100%;
   min-height: 100%;
 }
 .headImages > img {
   width: 100%;
   top: 0;
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  top: -10px;
 }
 .imgFront {
-  filter: grayscale();
-  z-index: 4 !important;
+  /* filter: grayscale(); */
+  position: absolute !important;
+  z-index: 10 !important;
+  top: 0;
+}
+.imgBack {
+  z-index: 2 !important;
+  position: relative;
 }
 @media only screen and (min-width: 800px) {
   .headTitle {
-    top: 5em;
-    font-size: 3em;
+    top: 4.5em;
+    font-size: 4em;
   }
 }

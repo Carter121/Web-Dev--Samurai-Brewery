@@ -2,6 +2,7 @@
 body {
   font-family: "Lato";
   overflow-x: hidden;
+  overflow-y: visible !important;
 }
 .btn {
   border: 1px solid white;
@@ -9,4 +10,8 @@ body {
   border-radius: 25%/50%;
   padding: 0.25em;
   border-width: 0.25em;
+}
+.overflow {
+  overflow-x: hidden;
+  position: relative;
 }

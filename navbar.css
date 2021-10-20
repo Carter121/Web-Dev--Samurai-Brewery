@@ -8,6 +8,10 @@
   font-size: 1.3em;
   font-weight: 900;
 }
+.title > img {
+  height: 4em;
+  filter: invert();
+}
 /*Properties for Nav-bar*/
 .navbar {
   display: flex;
@@ -16,8 +20,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  background: rgb(114, 79, 34);
-  overflow: hidden;
+  background: #1f1714;
+  overflow-x: hidden;
 }
 .nav-sub {
   display: flex;
@@ -50,23 +54,23 @@
 }
 @media only screen and (max-width: 800px) {
   * {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .navbar {
     height: 13vw;
   }
   .nav-sub {
     position: absolute;
-    top: 10vh;
-    right: 0px;
+    top: 8vh;
+    right: 0;
     flex-direction: column;
-    background-color: rgba(114, 79, 34, 0.9);
+    background-color: #1f1714;
     border-radius: 0px 0px 0px 20px;
     transition: transform 0.3s ease-in;
     transform: translate(100%);
     max-width: 100%;
-    overflow-x: hidden;
-    z-index: 5;
+    overflow: hidden;
+    z-index: 50;
   }
   .nav-change {
     transform: translate(0%);
