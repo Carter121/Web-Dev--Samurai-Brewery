@@ -1,18 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 body {
   font-family: "Lato";
-  display: grid;
-  grid-template-rows: auto;
-}
-.flex {
-  display: flex;
-}
-.center {
-  justify-content: center;
-  align-items: center;
-}
-.grid {
-  display: grid;
 }
 .btn {
   border: 1px solid white;
