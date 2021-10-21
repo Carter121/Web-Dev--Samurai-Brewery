@@ -1,3 +1,3 @@
 # Samurai Brewery Project
 
-This is a fictional restaurant/bar for my web development class.
+This is a fictional restaurant/bar website for my web development class.
