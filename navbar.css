@@ -3,14 +3,11 @@
   color: white;
   overflow-x: hidden;
 }
-.title {
-  cursor: pointer;
-  font-size: 1.3em;
-  font-weight: 900;
-}
-.title > img {
-  height: 4em;
+.title > a > img {
+  height: 4vw;
   filter: invert();
+  padding-top: 1em;
+  /* transform: scale(0.8); */
 }
 /*Properties for Nav-bar*/
 .navbar {
@@ -86,5 +83,10 @@
   }
   .change .bar3 {
     transform: rotate(-45deg) translate(8px, -3px);
+  }
+  .title > a > img {
+    height: 8vw;
+    filter: invert();
+    padding-top: 1em;
   }
 }

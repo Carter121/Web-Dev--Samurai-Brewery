@@ -13,7 +13,7 @@ header {
   color: white;
   font-size: 2em;
   font-weight: 700;
-  z-index: 3;
+  z-index: -1;
   position: absolute;
   top: 4em;
   text-shadow: 4px 4px 2px rgb(0, 0, 0);
@@ -22,6 +22,7 @@ header {
   position: relative;
   min-width: 100%;
   min-height: 100%;
+  background-image: rgb(63, 63, 63);
 }
 .headImages > img {
   width: 100%;
@@ -36,7 +37,7 @@ header {
   top: 0;
 }
 .imgBack {
-  z-index: 2 !important;
+  z-index: -3 !important;
   position: relative;
 }
 @media only screen and (min-width: 800px) {
