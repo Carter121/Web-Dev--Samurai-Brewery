@@ -4,7 +4,7 @@ header {
   align-items: center;
   grid-template-columns: auto;
   grid-column-gap: 0;
-  height: auto;
+  /* height: 153vh; */
   margin: 0;
   padding: 0;
   position: relative;

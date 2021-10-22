@@ -56,9 +56,12 @@ main > p {
     align-items: center;
   }
   .map {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
   }
   .viewmore {
     text-align: center;
@@ -76,6 +79,10 @@ main > p {
   }
   .viewmore > a:hover {
     font-size: 1.25em;
+  }
+  .mapouter {
+    height: 5em;
+    aspect-ratio: 1;
   }
 }
 .heading {
@@ -111,17 +118,22 @@ hr {
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
-  height: 100%;
 }
 .mapouter {
   text-align: right;
-  height: 25em;
-  width: 25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50em;
+  aspect-ratio: 1;
 }
 .gmap_canvas > iframe {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  aspect-ratio: 1;
   border: 15px solid white;
   border-radius: 1rem;
   box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
