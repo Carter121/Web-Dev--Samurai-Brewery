@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="header.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="overflow">
+      <nav class="navbar">
+        <div class="title">
+          <a href="/index.html"><img alt="Coffee Cup" src="/images/cheers.png" /></a>
+        </div>
+        <div class="ham">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
+        <ul class="nav-sub">
+          <li class="list-item">
+            <a href="/index.html" class="nav-link">Home</a>
+          </li>
+          <li class="list-item"><a href="#" class="nav-link">Menu</a></li>
+          <li class="list-item">
+            <a href="#" class="nav-link">Reservations</a>
+          </li>
+          <li class="list-item"><a href="#" class="nav-link">About Us</a></li>
+          <li class="list-item"><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <header>
+        <section class="headImages">
+          <img src="/images/menu.jpg" alt="Bar Back" class="imgBack" />
+        </section>
+      </header>
+      <main>
+        <h2 class="heading">Menu</h2>
+        <section class="flex menu-flex">
+          <div class="menu-container"></div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const hamburger = document.querySelector(".ham");
+      const navsub = document.querySelector(".nav-sub");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("change");
+        navsub.classList.toggle("nav-change");
+      });
+    </script>
+  </body>
+</html>

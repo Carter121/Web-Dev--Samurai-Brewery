@@ -2,26 +2,14 @@ main {
   z-index: 20;
   left: 0;
   position: relative;
-  background-color: rgb(34, 34, 34);
+  background-color: #222;
   padding: 0;
   margin-top: -1em;
 }
-main > p {
-  color: black;
-}
-.buttons {
-  font-size: 1.5em;
-  margin-left: 2em;
-  height: 100%;
-}
-.buttons > a {
-  color: black;
-  text-decoration: none;
-}
 .beer-container {
   width: 25%;
-  background: white;
-  border: 15px solid white;
+  background: #ccc;
+  border: 15px solid #ccc;
   border-radius: 1rem;
   box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
@@ -33,15 +21,24 @@ main > p {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
   -moz-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
   transform: scale(1.05);
+  background: #fff;
+  border: 15px solid #fff;
 }
 .beer-container > a > img {
   width: 100%;
+}
+.beer-container > a {
+  width: 100%;
+  text-decoration: none;
 }
 .beer-text {
   color: black;
   text-align: center;
   font-size: 1.25em;
-  font-weight: 500;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: transparent;
+  text-decoration: none;
 }
 .beer-flex {
   justify-content: space-around;
@@ -56,9 +53,12 @@ main > p {
     align-items: center;
   }
   .map {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
   }
   .viewmore {
     text-align: center;
@@ -66,24 +66,53 @@ main > p {
     overflow: visible;
   }
   .viewmore > a {
-    border: 2px white solid;
+    border: 2px #eee solid;
     padding: 0.25em 2em;
-    background-color: white;
+    background-color: #eee;
     color: black;
     text-decoration: none;
     font-size: 1em;
     border-radius: 500em; /* Setting this to a high number glitches it and makes it a pill shape */
   }
-  .viewmore > a:hover {
-    font-size: 1.25em;
+  .pic-container {
+    margin: 0.5em !important;
+    border: 8px solid #ccc !important;
+    box-shadow: 5px 5px 3px 0px rgba(169, 169, 169, 0.75) !important;
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(169, 169, 169, 0.75) !important;
+    -moz-box-shadow: 5px 5px 3px 0px rgba(169, 169, 169, 0.75) !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 10vw !important;
+  }
+  .viewmore > a {
+    font-size: 10vw !important;
   }
 }
 .heading {
   text-align: center;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 700;
-  padding: 1em;
   text-transform: capitalize;
+  color: #fff;
+  margin: 1.5em;
+}
+.header-box {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
 }
 .viewmore {
   text-align: center;
@@ -91,16 +120,17 @@ main > p {
   overflow: visible;
 }
 .viewmore > a {
-  border: 2px white solid;
+  border: 2px #eee solid;
   padding: 0.25em 2em;
-  background-color: white;
+  background-color: #eee;
   color: black;
   text-decoration: none;
   font-size: 2em;
   border-radius: 500em; /* Setting this to a high number glitches it and makes it a pill shape */
 }
 .viewmore > a:hover {
-  font-size: 2.05em;
+  background-color: #fff;
+  border: 2px #fff solid;
 }
 hr {
   border-top: 1px solid lightgray;
@@ -111,18 +141,15 @@ hr {
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
-  height: 100%;
-}
-.mapouter {
-  text-align: right;
-  height: 25em;
-  width: 25em;
 }
 .gmap_canvas > iframe {
-  width: 70%;
-  height: 70%;
-  border: 15px solid white;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 15px solid #ccc;
   border-radius: 1rem;
   box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
@@ -135,9 +162,59 @@ hr {
   align-items: center;
   width: 100%;
   height: 100%;
+  gap: 1em;
 }
 .gmap_canvas > iframe:hover {
+  box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.884);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.884);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.884);
+  border: 15px solid #fff;
+}
+.pic-container {
+  background: #ccc;
+  border: 15px solid #ccc;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
+  margin: 2em;
+}
+.pic-container:hover {
   box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
   -moz-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
+  transform: scale(1.05);
+  background: #fff;
+  border: 15px solid #fff;
+}
+.pic-container > img {
+  width: 100%;
+}
+.pic-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0 4vw;
+  overflow: hidden;
+  margin: 2em 0;
+  padding: 2em;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse; */
+}
+.two-wide {
+  grid-column: 1 / span 1;
+}
+.two-tall {
+  grid-row: 1 / span 2;
+  /* overflow: hidden; */
+}
+.one-to-one {
+  aspect-ratio: 1;
+}
+.two-tall-two {
+  grid-row: 3 / span 4;
+  grid-column: 2;
+  /* overflow: hidden; */
 }

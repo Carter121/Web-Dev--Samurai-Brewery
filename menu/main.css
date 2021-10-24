@@ -1,0 +1,65 @@
+main {
+  z-index: 20;
+  left: 0;
+  position: relative;
+  background-color: rgb(34, 34, 34);
+  padding: 0;
+  margin-top: -1em;
+}
+main > p {
+  color: black;
+}
+.buttons {
+  font-size: 1.5em;
+  margin-left: 2em;
+  height: 100%;
+}
+.buttons > a {
+  color: black;
+  text-decoration: none;
+}
+.heading {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 1em;
+  text-transform: capitalize;
+}
+.menu-container {
+  width: 25%;
+  background: white;
+  border: 15px solid white;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(169, 169, 169, 0.75);
+  margin: 2em;
+}
+.menu-container:hover {
+  box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
+  transform: scale(1.05);
+}
+.menu-container > a > img {
+  width: 100%;
+}
+.menu-text {
+  color: black;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+.menu-flex {
+  justify-content: space-around;
+}
+@media only screen and (max-width: 800px) {
+  .menu-container {
+    width: 50%;
+    margin-top: 3em;
+  }
+  .menu-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
