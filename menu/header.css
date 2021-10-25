@@ -10,12 +10,12 @@ header {
   padding: 0;
   position: relative;
   margin: 0 3em;
-  overflow-y: visible;
+  overflow: visible;
 }
 .header-txt {
   font-family: "Playfair Display";
   font-size: 7vw;
-  line-height: 1.15;
+  line-height: 1.05;
   font-weight: 700;
   max-width: 13ch;
   overflow-x: visible;
@@ -33,5 +33,10 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0;
+    margin-bottom: 4em;
+  }
+  .header-img {
+    max-width: 80%;
+    margin-top: 1em;
   }
 }
