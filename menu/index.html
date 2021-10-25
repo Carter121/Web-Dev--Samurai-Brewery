@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/navbar.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="tabs.css">
     <title>Document</title>
   </head>
   <body>
@@ -44,8 +45,89 @@
         
 
         <h2 class="heading">Menu</h2>
-        <section class="flex menu-flex">
-          <div class="menu-container"></div>
+        <section>
+          <div class="tab">
+            <button class="tablinks" onclick="openItem(event, 'Appetizers')" id="defaultOpen">Appetizers</button>
+            <button class="tablinks" onclick="openItem(event, 'Sandwiches')">Sandwiches</button>
+            <button class="tablinks" onclick="openItem(event, 'Steaks')">Steaks</button>
+            <button class="tablinks" onclick="openItem(event, 'Kids')">Kid's Food</button>
+            <button class="tablinks" onclick="openItem(event, 'Drinks')">Drinks</button>
+          </div>
+
+          <div id="Appetizers" class="tabcontent">
+            <h3 class="sm-heading">Appetizers</h3>
+            <div class="tab-grid">
+              <div class="tab-container">
+                <img src="/images/appetizer-1.jpg" alt="Grilled Chicken">
+                <div class="tab-text">
+                  Grilled Chicken
+                </div>
+              </div>
+              <div class="tab-container">
+                <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
+                <div class="tab-text">
+                  Fried Chicken
+                </div>
+            </div>
+            <div class="tab-container">
+              <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
+              <div class="tab-text">
+                Fried Chicken
+              </div>
+            </div>
+            <div class="tab-container">
+              <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
+              <div class="tab-text">
+                Fried Chicken
+              </div>
+            </div>
+            <div class="tab-container">
+              <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
+              <div class="tab-text">
+                Fried Chicken
+              </div>
+            </div>
+            <div class="tab-container">
+              <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
+              <div class="tab-text">
+                Fried Chicken
+              </div>
+            </div>
+            <div class="tab-container">
+              <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
+              <div class="tab-text">
+                Fried Chicken
+              </div>
+            </div>
+            <div class="tab-container">
+              <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
+              <div class="tab-text">
+                Fried Chicken
+              </div>
+            </div>
+            <div class="tab-container">
+              <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
+              <div class="tab-text">
+                Fried Chicken
+              </div>
+            </div>
+          </div>
+          <div id="Sandwiches" class="tabcontent">
+            <h3 class="sm-heading">Sandwiches</h3>
+            
+          </div>
+          <div id="Steaks" class="tabcontent">
+            <h3 class="sm-heading">Steaks</h3>
+            
+          </div>
+          <div id="Kids" class="tabcontent">
+            <h3 class="sm-heading">Kid's Food</h3>
+            
+          </div>
+          <div id="Drinks" class="tabcontent">
+            <h3 class="sm-heading">Drinks</h3>
+            
+          </div>
         </section>
       </main>
     </div>
@@ -56,6 +138,32 @@
         hamburger.classList.toggle("change");
         navsub.classList.toggle("nav-change");
       });
+    </script>
+    <script>
+      function openItem(evt, type) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(type).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+    <script>
+      // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
     </script>
   </body>
 </html>
