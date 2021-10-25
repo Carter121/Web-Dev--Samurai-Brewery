@@ -25,7 +25,7 @@ main > p {
   padding: 1em;
   text-transform: capitalize;
 }
-.menu-container {
+/* .menu-container {
   width: 25%;
   background: white;
   border: 15px solid white;
@@ -40,7 +40,7 @@ main > p {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
   -moz-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.74);
   transform: scale(1.05);
-}
+} */
 .menu-container > a > img {
   width: 100%;
 }
@@ -50,9 +50,9 @@ main > p {
   font-size: 1.25em;
   font-weight: 500;
 }
-.menu-flex {
+/* .menu-flex {
   justify-content: space-around;
-}
+} */
 @media only screen and (max-width: 800px) {
   .menu-container {
     width: 50%;

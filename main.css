@@ -197,11 +197,6 @@ hr {
   overflow: hidden;
   margin: 2em 0;
   padding: 2em;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse; */
 }
 .two-wide {
   grid-column: 1 / span 1;
