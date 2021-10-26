@@ -58,25 +58,25 @@
 }
 .tab-grid {
   display: grid;
-  margin: 3em 3em;
-  grid-template-columns: repeat(9, 100%);
-  gap: 5%;
-  overflow-x: scroll;
-  position: static;
-  scroll-snap-type: x mandatory;
-  padding: 2em;
+  margin: 3em;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  /* gap: 5%; */
+  overflow: visible !important;
 }
 .tab-container {
   border: 1em solid #ccc;
   border-radius: 2em;
   background-color: #ccc;
-  width: 100%;
+  width: 90%;
+  overflow: visible;
   margin: 2em;
-  scroll-snap-align: center;
-  user-select: none;
 }
 .tab-container > img {
   width: 100%;
+  border: 1px transparent solid;
+  border-radius: 2em;
   aspect-ratio: 1;
 }
 .tab-text {
@@ -89,16 +89,23 @@
   text-decoration: none;
 }
 @media only screen and (max-width: 800px) {
+  .tab-grid {
+    grid-template-columns: 1fr;
+    justify-content: center !important;
+  }
   .tab-container {
-    border: 0.8em solid #ccc;
+    border: 0.75em solid #ccc;
     border-radius: 2em;
     background-color: #ccc;
-    width: 100%;
-    margin: 2em;
-    scroll-snap-align: center;
-    user-select: none;
+    width: 90%;
+    overflow: visible;
+    margin: 1em 0;
   }
-  .tab-grid {
-    padding: 1em;
+  .tab-text {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  .tab button {
+    font-size: 2.9vw;
   }
 }
