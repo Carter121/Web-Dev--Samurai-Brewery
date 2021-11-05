@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Samurai Brewery ~ Reservations</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <div class="overflow">
+        <nav class="navbar">
+            <div class="title">
+                <a href="/index.html"><img alt="Coffee Cup" src="/images/cheers.png" /></a>
+            </div>
+            <div class="ham">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            <ul class="nav-sub">
+                <li class="list-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="list-item"><a href="/menu/" class="nav-link">Menu</a></li>
+                <li class="list-item"><a href="/reservation/" class="nav-link">Reservations</a></li>
+                <li class="list-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="list-item"><a href="#" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="header-txt-img">
+                <div class="header-txt">
+                    drink, food & <span class="fw-900">Enjoy</span> with your family.
+                </div>
+                <div class="btn">
+                    <a href="#">Reserve Now</a>
+                    <a href="/menu/">View Menu</a>
+                </div>
+            </div>
+            <img class="header-img" src="/images/reservation-header.jpg" alt="girl eating">
+        </header>
+        <main>
+            <h2 class="heading">Reserve a Table</h2>
+            <section class="reserve-flex">
+                <div class="container">
+                    <label for="date">What's the date?</label>
+                    <input id="date" type="date" name="date">
+                </div>
+                <div class="container">
+                    <label for="time">What's the time?</label>
+                    <input id="time" type="time" name="time">
+                </div>
+                <div class="container">
+                    <label for="location">What location?</label>
+                    <input list="locations" name="location" placeholder="Select Location">
+                    <datalist id="locations">
+                        <option value="5507 W 20th Ave, Denver, CO"></option>
+                        <option value="8172 S Holly St, Littleton, CO"></option>
+                        <option value="128 S Main St, Salt Lake City, UT"></option>
+                    </datalist>
+                </div>
+                <div class="container">
+                    <button id="reserveEl">Reserve</button>
+                </div>
+            </section>
+            <div class="center">
+                <div id="confirm">
+                    <h2>Reservation Confirmed</h2>
+                    <p>Your table is reserved</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const hamburger = document.querySelector(".ham");
+        const navsub = document.querySelector(".nav-sub");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("change");
+            navsub.classList.toggle("nav-change");
+        });
+    </script>
+    <script>
+        const dateEl = document.getElementById("date");
+        const timeEl = document.getElementById("time");
+        const locationEl = document.getElementById("location");
+        const btnEl = document.getElementById("reserveEl");
+
+        btnEl.addEventListener("click", function() {
+            console.log(dateEl.value);
+            console.log(timeEl.value);
+            console.log(locationEl.value);
+        })
+    </script>
 </body>
 </html>
