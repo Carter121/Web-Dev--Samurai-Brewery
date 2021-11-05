@@ -48,22 +48,31 @@
             <section class="reserve-flex">
                 <div class="container">
                     <label for="date">What's the date?</label>
-                    <input type="date" name="date">
+                    <input id="date" type="date" name="date">
                 </div>
                 <div class="container">
                     <label for="time">What's the time?</label>
-                    <input type="time" name="time">
+                    <input id="time" type="time" name="time">
                 </div>
                 <div class="container">
                     <label for="location">What location?</label>
-                    <input list="locations" name="location">
+                    <input list="locations" name="location" placeholder="Select Location">
                     <datalist id="locations">
                         <option value="5507 W 20th Ave, Denver, CO"></option>
                         <option value="8172 S Holly St, Littleton, CO"></option>
                         <option value="128 S Main St, Salt Lake City, UT"></option>
                     </datalist>
                 </div>
+                <div class="container">
+                    <button id="reserveEl">Reserve</button>
+                </div>
             </section>
+            <div class="center">
+                <div id="confirm">
+                    <h2>Reservation Confirmed</h2>
+                    <p>Your table is reserved</p>
+                </div>
+            </div>
         </main>
     </div>
     <script>
@@ -73,6 +82,18 @@
             hamburger.classList.toggle("change");
             navsub.classList.toggle("nav-change");
         });
+    </script>
+    <script>
+        const dateEl = document.getElementById("date");
+        const timeEl = document.getElementById("time");
+        const locationEl = document.getElementById("location");
+        const btnEl = document.getElementById("reserveEl");
+
+        btnEl.addEventListener("click", function() {
+            console.log(dateEl.value);
+            console.log(timeEl.value);
+            console.log(locationEl.value);
+        })
     </script>
 </body>
 </html>
