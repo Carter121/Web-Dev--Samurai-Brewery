@@ -31,6 +31,7 @@
                 <li class="list-item"><a href="#" class="nav-link">Contact Us</a></li>
             </ul>
         </nav>
+        <!--Test-->
         <header>
             <div class="header-txt-img">
                 <div class="header-txt">
@@ -56,7 +57,7 @@
                 </div>
                 <div class="container">
                     <label for="location">What location?</label>
-                    <input list="locations" name="location" placeholder="Select Location">
+                    <input list="locations" name="location" placeholder="Select Location" id="locationInput">
                     <datalist id="locations">
                         <option value="5507 W 20th Ave, Denver, CO"></option>
                         <option value="8172 S Holly St, Littleton, CO"></option>
@@ -70,7 +71,7 @@
             <div class="center">
                 <div id="confirm">
                     <h2>Reservation Confirmed</h2>
-                    <p>Your table is reserved</p>
+                    <p id="reserveTxt">Your table is reserved</p>
                 </div>
             </div>
         </main>
@@ -86,13 +87,23 @@
     <script>
         const dateEl = document.getElementById("date");
         const timeEl = document.getElementById("time");
-        const locationEl = document.getElementById("location");
+        const locationEl = document.getElementById("locationInput");
         const btnEl = document.getElementById("reserveEl");
+        const txt = document.getElementById("reserveTxt");
+        const popup = document.getElementById("confirm");
 
         btnEl.addEventListener("click", function() {
-            console.log(dateEl.value);
-            console.log(timeEl.value);
-            console.log(locationEl.value);
+            txt.textContent = `Your table is reserved for ${timeEl.value} on ${dateEl.value} at ${locationEl.value}!`
+            
+            popup.style.display = "block";
+            
+            setTimeout(function() {
+                popup.style.display = "none";
+            }, 5000);
+
+            dateEl.value = '';
+            timeEl.value = '';
+            locationEl.value = '';
         })
     </script>
 </body>

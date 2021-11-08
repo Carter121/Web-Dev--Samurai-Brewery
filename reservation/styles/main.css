@@ -75,6 +75,7 @@ button:hover {
   width: 90%;
   height: 100px;
   border-radius: 500em;
+  display: none;
 }
 #confirm P,
 #confirm h2 {
