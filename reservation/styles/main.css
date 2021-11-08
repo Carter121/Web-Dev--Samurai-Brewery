@@ -24,6 +24,8 @@ input[type="time"] {
   align-items: center;
   width: 80%;
   margin: auto;
+  flex-wrap: wrap;
+  overflow: visible;
 }
 .container {
   display: flex;
@@ -41,8 +43,9 @@ input[type="time"] {
   color: black;
   font-family: "Lato";
   margin-top: 0.5em;
-  padding: 0.5em;
-  border: none;
+  padding: 0.8em;
+  border: 2px solid black;
+  border-radius: 500em;
   width: 78%;
 }
 button {

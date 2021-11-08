@@ -27,7 +27,7 @@
                 </li>
                 <li class="list-item"><a href="/menu/" class="nav-link">Menu</a></li>
                 <li class="list-item"><a href="/reservation/" class="nav-link">Reservations</a></li>
-                <li class="list-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="list-item"><a href="/about/" class="nav-link">About Us</a></li>
                 <li class="list-item"><a href="#" class="nav-link">Contact Us</a></li>
             </ul>
         </nav>
@@ -65,6 +65,10 @@
                     </datalist>
                 </div>
                 <div class="container">
+                    <label for="name">What's the name for the reservation</label>
+                    <input type="text" name="name" id="nameInput" placeholder="Name">
+                </div>
+                <div class="container">
                     <button id="reserveEl">Reserve</button>
                 </div>
             </section>
@@ -84,27 +88,6 @@
             navsub.classList.toggle("nav-change");
         });
     </script>
-    <script>
-        const dateEl = document.getElementById("date");
-        const timeEl = document.getElementById("time");
-        const locationEl = document.getElementById("locationInput");
-        const btnEl = document.getElementById("reserveEl");
-        const txt = document.getElementById("reserveTxt");
-        const popup = document.getElementById("confirm");
-
-        btnEl.addEventListener("click", function() {
-            txt.textContent = `Your table is reserved for ${timeEl.value} on ${dateEl.value} at ${locationEl.value}!`
-            
-            popup.style.display = "block";
-            
-            setTimeout(function() {
-                popup.style.display = "none";
-            }, 5000);
-
-            dateEl.value = '';
-            timeEl.value = '';
-            locationEl.value = '';
-        })
-    </script>
+    <script src="./JS/app.js"></script>
 </body>
 </html>
