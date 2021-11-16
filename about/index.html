@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Samurai Brewery ~ About Us</title>
 </head>
 <body>
-    
+    <div class="overflow">
+        <nav class="navbar">
+            <div class="title">
+                <a href="/index.html"><img alt="Coffee Cup" src="/images/cheers.png" /></a>
+            </div>
+                <div class="ham">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+            <ul class="nav-sub">
+            <li class="list-item">
+                <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="list-item"><a href="../menu/" class="nav-link">Menu</a></li>
+            <li class="list-item"><a href="../reservation/" class="nav-link">Reservations</a></li>
+            <li class="list-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="list-item"><a href="../contact/" class="nav-link">Contact Us</a></li>
+        </ul>
+        </nav>
+        <main>
+            <header>
+                <h2 class="header-txt">we are a  <span class="fw-900">resturant</span> and <span class="fw-900">brewery</span></h2>
+            </header>
+            <h1 class="heading">Our Founders</h1>
+            <div class="founder-container">
+                <div class="founder-container2">
+                    <img class="founder-img" src="../images/founder-1.jpg" alt="Founder">
+                    <span>Dennis Clarke</span>
+                </div>
+                <div class="founder-container2">
+                    <img class="founder-img" src="../images/founder-2.jpg" alt="Founder">
+                    <span>Jeffrey Ellsworth</span>
+                </div>
+            </div>
+            <h2 class="heading">How we started</h2>
+            <div class="started-container">
+                <p>Samurai Brewery and restaurant was founded by Dennis Clarke 
+                    and Jeffrey Ellsworth in 2014. Their aim was to brew and develop 
+                    a range of beers very familiar to the states. Believing that general beer drinkers had a unique interest in alternative ways to sample and enjoy craft beers.
+                </p>
+                    
+                <p> 
+                    Adam Reid beers; Theyakerush Radler, Sunkist, Revolonade, and Spring Blazer for example; 
+                    are created for that tiny group of drinkers who want a spirit of rebellion and playfulness as well as superb taste.
+                    They opened their first resturant in 2015 in Denver, Co. And a year later in 2016 opened a new location in Salt Lake City, Ut.
+                </p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div>
+                <a href="https://instagram.com"><img class="footer-img" src="/images/instagram_icon.png" alt="Instagram Icon"></a>
+                <a href="https://twitter.com"><img class="footer-img" src="/images/twitter_icon.png" alt="Twitter Icon"></a>
+            </div>
+            <div class="footer--links">
+                <a href="./index.html">Home</a>
+                <a href="./menu/">Menu</a>
+                <a href="./reservation/">Reservations</a>
+                <a href="./about/">About Us</a>
+                <a href="./about/">Contact</a>
+            </div>
+            <div>
+                <p>Copyright © 2021 Samurai Brewery. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const hamburger = document.querySelector(".ham");
+        const navsub = document.querySelector(".nav-sub");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("change");
+            navsub.classList.toggle("nav-change");
+        });
+    </script>
 </body>
 </html>

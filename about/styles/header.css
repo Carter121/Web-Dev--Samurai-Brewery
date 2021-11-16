@@ -1,0 +1,19 @@
+.header-txt {
+    font-family: "Lato";
+    font-size: 7vw;
+    line-height: 1.05;
+    font-weight: 700;
+    max-width: 10ch;
+    overflow-x: visible;
+    overflow-y: hidden;
+    padding-left: 1em;
+}
+.fw-900 {
+    font-weight: 900;
+    background: #d53369;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
