@@ -4,7 +4,7 @@ main {
   position: relative;
   background-color: #222;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 .heading {
   text-align: center;

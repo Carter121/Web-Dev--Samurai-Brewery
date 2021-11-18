@@ -1,0 +1,60 @@
+header {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin: 0 3em;
+    overflow: visible;
+  }
+/* .header-txt {
+    font-family: "Lato";
+    font-size: 7vw;
+    line-height: 1.05;
+    font-weight: 700;
+    max-width: 10ch;
+    overflow-x: visible;
+    overflow-y: hidden;
+    padding-left: 1em;
+} */
+.header-txt {
+    font-family: "Lato";
+    font-size: 7vw;
+    line-height: 1.05;
+    font-weight: 700;
+    max-width: 13ch;
+    overflow-x: visible;
+    overflow-y: hidden;
+  }
+.fw-900 {
+    font-weight: 900;
+    background-image: linear-gradient(to right bottom, #eb4c3d, #ec613c, #ed743d, #ed8641, #ec9648);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.header-img {
+    width: 85%;
+    border: 3% solid black;
+    border-radius: 50%;
+  }
+  @media only screen and (max-width: 800px) {
+    header {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin: 0;
+      margin-bottom: 4em;
+    }
+    .header-img {
+      max-width: 90%;
+      margin-top: 1em;
+    }
+    .header-txt {
+      font-size: 10vw;
+    }
+  }
+  

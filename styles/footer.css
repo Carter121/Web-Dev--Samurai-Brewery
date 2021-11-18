@@ -7,6 +7,7 @@
     margin-top: 8em;
     flex-direction: column;
     align-items: center;
+    overflow: visible;
 }
 .footer-img {
     height: 4em;
@@ -14,12 +15,28 @@
     filter: invert(1);
     margin: 0.5em;
 }
+.footer--images {
+    display: flex;
+    overflow-x: visible;
+}
 footer > div > p {
     margin-top: 5em;
+    overflow: visible;
 }
 .footer--links {
-    margin-top: 2em;
+    display: flex;
+    margin-top: 1em;
+    overflow-x: visible;
 }
 .footer--links > a {
     margin: 1em;
+}
+.footer--copy {
+    overflow-x: visible;
+}
+@media only screen and (max-width: 800px) {
+    .footer--links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
