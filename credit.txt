@@ -76,3 +76,7 @@ Photo by <a href="https://unsplash.com/@pablomerchanm?utm_source=unsplash&utm_me
 <div>Icons made by <a href="https://www.flaticon.com/authors/edtim" title="edt.im">edt.im</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+Photo by <a href="https://unsplash.com/@kevinthepeople?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Kristhian</a> on <a href="https://unsplash.com/s/photos/brewery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@blakewisz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Blake Wisz</a> on <a href="https://unsplash.com/s/photos/customer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

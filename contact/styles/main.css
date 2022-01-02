@@ -1,0 +1,42 @@
+body {
+    box-sizing: border-box;
+}
+.heading {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 1em;
+    text-transform: capitalize;
+    margin-top: 3em;
+}
+input {
+    color: black;
+}
+#messageEl {
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+    word-break: keep-all;
+    padding-left: 0.8em;
+}
+.doubleHeight {
+    height: 3em;
+    overflow: visible;
+}
+.flex {
+    display: flex;
+}
+.center {
+    justify-content: center;
+}
+td {
+    padding: 0.5rem;
+}
+button {
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    height: 3em;
+    width: 100%;
+}
