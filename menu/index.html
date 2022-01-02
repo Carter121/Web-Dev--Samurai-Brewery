@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/tabs.css">
-    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/tabs.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
     <title>Samurai Brewery ~ Menu</title>
   </head>
   <body>
     <div class="overflow">
       <nav class="navbar">
         <div class="title">
-          <a href="/index.html"><img alt="Coffee Cup" src="/images/cheers.png" /></a>
+          <a href="/index.html"
+            ><img alt="Coffee Cup" src="../images/cheers.png"
+          /></a>
         </div>
         <div class="ham">
           <span class="bar1"></span>
@@ -25,153 +27,142 @@
         </div>
         <ul class="nav-sub">
           <li class="list-item">
-            <a href="/index.html" class="nav-link">Home</a>
+            <a href="../index.html" class="nav-link">Home</a>
           </li>
           <li class="list-item"><a href="#" class="nav-link">Menu</a></li>
-          <li class="list-item"><a href="/reservation/" class="nav-link">Reservations</a></li>
-          <li class="list-item"><a href="/about/" class="nav-link">About Us</a></li>
-          <li class="list-item"><a href="/contact/index.html" class="nav-link">Contact Us</a></li>
+          <li class="list-item">
+            <a href="../reservation/" class="nav-link">Reservations</a>
+          </li>
+          <li class="list-item">
+            <a href="../about/" class="nav-link">About Us</a>
+          </li>
+          <li class="list-item">
+            <a href="../contact/index.html" class="nav-link">Contact Us</a>
+          </li>
         </ul>
       </nav>
       <header>
         <div class="header-txt">
-          it's not just <span class="fw-900">Food</span>, it's an <span class="fw-900">Experience</span>.
+          it's not just <span class="fw-900">Food</span>, it's an
+          <span class="fw-900">Experience</span>.
         </div>
-        <img src="/images/header-steak.jpg" alt="steak" class="header-img">
+        <img src="../images/header-steak.jpg" alt="steak" class="header-img" />
       </header>
       <main>
-
-        
-
         <h2 class="heading">Menu</h2>
         <section>
           <div class="tab">
-            <button class="tablinks" onclick="openItem(event, 'Appetizers')" id="defaultOpen">Appetizers</button>
-            <button class="tablinks" onclick="openItem(event, 'Sandwiches')">Sandwiches</button>
-            <button class="tablinks" onclick="openItem(event, 'Steaks')">Steaks</button>
-            <button class="tablinks" onclick="openItem(event, 'Drinks')">Drinks</button>
+            <button
+              class="tablinks"
+              onclick="openItem(event, 'Appetizers')"
+              id="defaultOpen"
+            >
+              Appetizers
+            </button>
+            <button class="tablinks" onclick="openItem(event, 'Sandwiches')">
+              Sandwiches
+            </button>
+            <button class="tablinks" onclick="openItem(event, 'Steaks')">
+              Steaks
+            </button>
+            <button class="tablinks" onclick="openItem(event, 'Drinks')">
+              Drinks
+            </button>
           </div>
 
           <div id="Appetizers" class="tabcontent">
             <h3 class="sm-heading">Appetizers</h3>
             <div class="tab-grid">
               <div class="tab-container">
-                <img src="/images/appetizer-1.jpg" alt="Grilled Chicken">
-                <div class="tab-text">
-                  Grilled Chicken
-                </div>
+                <img src="../images/appetizer-1.jpg" alt="Grilled Chicken" />
+                <div class="tab-text">Grilled Chicken</div>
               </div>
               <div class="tab-container">
-                <img src="/images/appetizer-2.jpg" alt="Fried Chicken">
-                <div class="tab-text">
-                  Fried Chicken
-                </div>
-            </div>
-            <div class="tab-container">
-              <img src="/images/appetizer-3.jpg" alt="French Fries">
-              <div class="tab-text">
-                French Fries
+                <img src="../images/appetizer-2.jpg" alt="Fried Chicken" />
+                <div class="tab-text">Fried Chicken</div>
               </div>
-            </div>
-            <div class="tab-container">
-              <img src="/images/appetizer-4.jpg" alt="Assorted Fruit Plate">
-              <div class="tab-text">
-                Assorted Fruit Plate
+              <div class="tab-container">
+                <img src="../images/appetizer-3.jpg" alt="French Fries" />
+                <div class="tab-text">French Fries</div>
               </div>
-            </div>
-            <div class="tab-container">
-              <img src="/images/appetizer-5.jpg" alt="Salmon Bruschetta with Cream Cheese">
-              <div class="tab-text">
-                Salmon Bruschetta with Cream Cheese
+              <div class="tab-container">
+                <img
+                  src="../images/appetizer-4.jpg"
+                  alt="Assorted Fruit Plate"
+                />
+                <div class="tab-text">Assorted Fruit Plate</div>
               </div>
-            </div>
-            <div class="tab-container">
-              <img src="/images/appetizer-6.jpg" alt="Mini Chicken Wrap">
-              <div class="tab-text">
-                Mini Chicken Wrap
+              <div class="tab-container">
+                <img
+                  src="../images/appetizer-5.jpg"
+                  alt="Salmon Bruschetta with Cream Cheese"
+                />
+                <div class="tab-text">Salmon Bruschetta with Cream Cheese</div>
               </div>
-            </div>
+              <div class="tab-container">
+                <img src="../images/appetizer-6.jpg" alt="Mini Chicken Wrap" />
+                <div class="tab-text">Mini Chicken Wrap</div>
+              </div>
             </div>
           </div>
           <div id="Sandwiches" class="tabcontent">
             <h3 class="sm-heading">Sandwiches</h3>
             <div class="tab-grid">
               <div class="tab-container">
-                <img src="/images/sandwich-1.jpg" alt="Vegan Chickpea Salad">
-                <div class="tab-text">
-                  Vegan Chickpea Salad
-                </div>
+                <img
+                  src="../images/sandwich-1.jpg"
+                  alt="Vegan Chickpea Salad"
+                />
+                <div class="tab-text">Vegan Chickpea Salad</div>
               </div>
               <div class="tab-container">
-                <img src="/images/sandwich-2.jpg" alt="Roast Beef">
-                <div class="tab-text">
-                  Roast beef
-                </div>
+                <img src="../images/sandwich-2.jpg" alt="Roast Beef" />
+                <div class="tab-text">Roast beef</div>
               </div>
               <div class="tab-container">
-                <img src="/images/sandwich-3.jpg" alt="Vegan Burger">
-                <div class="tab-text">
-                  Vegan Burger
-                </div>
+                <img src="../images/sandwich-3.jpg" alt="Vegan Burger" />
+                <div class="tab-text">Vegan Burger</div>
               </div>
               <div class="tab-container">
-                <img src="/images/sandwich-4.jpg" alt="Turkey">
-                <div class="tab-text">
-                  Turkey
-                </div>
+                <img src="../images/sandwich-4.jpg" alt="Turkey" />
+                <div class="tab-text">Turkey</div>
               </div>
               <div class="tab-container">
-                <img src="/images/sandwich-5.jpg" alt="Baked Chicken">
-                <div class="tab-text">
-                  Baked Chicken
-                </div>
+                <img src="../images/sandwich-5.jpg" alt="Baked Chicken" />
+                <div class="tab-text">Baked Chicken</div>
               </div>
               <div class="tab-container">
-                <img src="/images/sandwich-6.jpg" alt="Simple Hamburger">
-                <div class="tab-text">
-                  Simple Hamburger
-                </div>
+                <img src="../images/sandwich-6.jpg" alt="Simple Hamburger" />
+                <div class="tab-text">Simple Hamburger</div>
               </div>
-              </div>
+            </div>
           </div>
           <div id="Steaks" class="tabcontent">
             <h3 class="sm-heading">Steaks</h3>
             <div class="tab-grid">
               <div class="tab-container">
-                <img src="/images/steak-1.jpg" alt="Sirloin">
-                <div class="tab-text">
-                  Sirloin
-                </div>
+                <img src="../images/steak-1.jpg" alt="Sirloin" />
+                <div class="tab-text">Sirloin</div>
               </div>
               <div class="tab-container">
-                <img src="/images/steak-2.jpg" alt="Ribeye">
-                <div class="tab-text">
-                  Ribeye
-                </div>
+                <img src="../images/steak-2.jpg" alt="Ribeye" />
+                <div class="tab-text">Ribeye</div>
               </div>
               <div class="tab-container">
-                <img src="/images/steak-3.jpg" alt="T-Bone">
-                <div class="tab-text">
-                  T-Bone
-                </div>
+                <img src="../images/steak-3.jpg" alt="T-Bone" />
+                <div class="tab-text">T-Bone</div>
               </div>
               <div class="tab-container">
-                <img src="/images/steak-4.jpg" alt="Tomahawk">
-                <div class="tab-text">
-                  Tomahawk
-                </div>
+                <img src="../images/steak-4.jpg" alt="Tomahawk" />
+                <div class="tab-text">Tomahawk</div>
               </div>
               <div class="tab-container">
-                <img src="/images/steak-5.jpg" alt="Australian">
-                <div class="tab-text">
-                  Australian
-                </div>
+                <img src="../images/steak-5.jpg" alt="Australian" />
+                <div class="tab-text">Australian</div>
               </div>
               <div class="tab-container">
-                <img src="/images/steak-6.jpg" alt="Sirloin with Mushrooms">
-                <div class="tab-text">
-                  Sirloin with Mushrooms
-                </div>
+                <img src="../images/steak-6.jpg" alt="Sirloin with Mushrooms" />
+                <div class="tab-text">Sirloin with Mushrooms</div>
               </div>
             </div>
           </div>
@@ -179,61 +170,60 @@
             <h3 class="sm-heading">Drinks</h3>
             <div class="tab-grid">
               <div class="tab-container">
-                <img src="/images/drink-1.jpg" alt="Soda">
-                <div class="tab-text">
-                  Soda
-                </div>
+                <img src="../images/drink-1.jpg" alt="Soda" />
+                <div class="tab-text">Soda</div>
               </div>
               <div class="tab-container">
-                <img src="/images/drink-2.jpg" alt="Water">
-                <div class="tab-text">
-                  Water
-                </div>
+                <img src="../images/drink-2.jpg" alt="Water" />
+                <div class="tab-text">Water</div>
               </div>
               <div class="tab-container">
-                <img src="/images/drink-3.jpg" alt="White Wine">
-                <div class="tab-text">
-                  White Wine
-                </div>
+                <img src="../images/drink-3.jpg" alt="White Wine" />
+                <div class="tab-text">White Wine</div>
               </div>
               <div class="tab-container">
-                <img src="/images/drink-4.jpg" alt="Cocktail">
-                <div class="tab-text">
-                  Cocktail
-                </div>
+                <img src="../images/drink-4.jpg" alt="Cocktail" />
+                <div class="tab-text">Cocktail</div>
               </div>
               <div class="tab-container">
-                <img src="/images/drink-5.jpg" alt="Assorted Liquor">
-                <div class="tab-text">
-                  Assorted Liquor
-                </div>
+                <img src="../images/drink-5.jpg" alt="Assorted Liquor" />
+                <div class="tab-text">Assorted Liquor</div>
               </div>
               <div class="tab-container">
-                <img src="/images/drink-6.jpg" alt="Coffee">
-                <div class="tab-text">
-                  Coffee
-                </div>
+                <img src="../images/drink-6.jpg" alt="Coffee" />
+                <div class="tab-text">Coffee</div>
               </div>
+            </div>
           </div>
         </section>
       </main>
       <footer class="footer">
         <div class="footer--images">
-            <a href="https://instagram.com"><img class="footer-img" src="/images/instagram_icon.png" alt="Instagram Icon"></a>
-            <a href="https://twitter.com"><img class="footer-img" src="/images/twitter_icon.png" alt="Twitter Icon"></a>
+          <a href="https://instagram.com"
+            ><img
+              class="footer-img"
+              src="../images/instagram_icon.png"
+              alt="Instagram Icon"
+          /></a>
+          <a href="https://twitter.com"
+            ><img
+              class="footer-img"
+              src="../images/twitter_icon.png"
+              alt="Twitter Icon"
+          /></a>
         </div>
         <div class="footer--links">
-            <a href="/index.html">Home</a>
-            <a href="/menu/">Menu</a>
-            <a href="/reservation/">Reservations</a>
-            <a href="/about/">About Us</a>
-            <a href="/contact/index.html">Contact</a>
-            <a href="/extra/">Extra Stuffs</a>
+          <a href="../index.html">Home</a>
+          <a href="../menu/">Menu</a>
+          <a href="../reservation/">Reservations</a>
+          <a href="../about/">About Us</a>
+          <a href="../contact/index.html">Contact</a>
+          <a href="../extra/">Extra Stuffs</a>
         </div>
         <div class="footer--copy">
-            <p>Copyright © 2021 Samurai Brewery. All Rights Reserved</p>
+          <p>Copyright © 2021 Samurai Brewery. All Rights Reserved</p>
         </div>
-    </footer>
+      </footer>
     </div>
     <script>
       const hamburger = document.querySelector(".ham");
@@ -245,29 +235,29 @@
     </script>
     <script>
       function openItem(evt, type) {
-          // Declare all variables
-          var i, tabcontent, tablinks;
+        // Declare all variables
+        var i, tabcontent, tablinks;
 
-          // Get all elements with class="tabcontent" and hide them
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-
-          // Get all elements with class="tablinks" and remove the class "active"
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-
-          // Show the current tab, and add an "active" class to the button that opened the tab
-          document.getElementById(type).style.display = "block";
-          evt.currentTarget.className += " active";
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
         }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(type).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
     </script>
     <script>
       // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
+      document.getElementById("defaultOpen").click();
     </script>
   </body>
 </html>

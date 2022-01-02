@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <title>Samurai Brewery</title>
   </head>
   <body>
     <div class="overflow">
       <nav class="navbar">
         <div class="title">
-          <a href="#"><img alt="Coffee Cup" src="images/cheers.png" /></a>
+          <a href="#"><img alt="Coffee Cup" src="./images/cheers.png" /></a>
         </div>
         <div class="ham">
           <span class="bar1"></span>
@@ -25,19 +25,23 @@
         <ul class="nav-sub">
           <li class="list-item"><a href="#" class="nav-link">Home</a></li>
           <li class="list-item"><a href="./menu/" class="nav-link">Menu</a></li>
-          <li class="list-item"><a href="./reservation/" class="nav-link">Reservations</a></li>
-          <li class="list-item"><a href="./about/" class="nav-link">About Us</a></li>
-          <li class="list-item"><a href="/contact/index.html" class="nav-link">Contact Us</a></li>
+          <li class="list-item">
+            <a href="./reservation/" class="nav-link">Reservations</a>
+          </li>
+          <li class="list-item">
+            <a href="./about/" class="nav-link">About Us</a>
+          </li>
+          <li class="list-item">
+            <a href="./contact/index.html" class="nav-link">Contact Us</a>
+          </li>
         </ul>
       </nav>
       <header>
         <section class="headImages">
-          <img src="/images/bar_front.png" alt="Bar Front" class="imgFront" />
-          <img src="/images/bar.jpg" alt="Bar Back" class="imgBack" />
+          <img src="./images/bar_front.png" alt="Bar Front" class="imgFront" />
+          <img src="./images/bar.jpg" alt="Bar Back" class="imgBack" />
         </section>
-        <section class="headTitle" id="headTxt">
-          Samurai Brewery
-        </section>
+        <section class="headTitle" id="headTxt">Samurai Brewery</section>
       </header>
 
       <main>
@@ -46,26 +50,29 @@
         </div>
         <section class="pic-grid">
           <div class="pic-container">
-            <img alt="Full Restaurant" src="/images/full-restaurant.jpg">
+            <img alt="Full Restaurant" src="./images/full-restaurant.jpg" />
           </div>
           <div class="pic-container pic-width">
-            <img alt="Kitchen with lots of workers" src="/images/kitchen.jpg">
+            <img
+              alt="Kitchen with lots of workers"
+              src="./images/kitchen.jpg"
+            />
           </div>
           <div class="pic-container pic-width">
-            <img alt="2 people with wine" src="/images/wine.jpg">
+            <img alt="2 people with wine" src="./images/wine.jpg" />
           </div>
           <div class="pic-container two-tall">
-            <img alt="Beer from tap" src="/images/beer-from-tap2.jpg">
+            <img alt="Beer from tap" src="./images/beer-from-tap2.jpg" />
           </div>
           <div class="pic-container two-tall-two">
-            <img alt="wall" src="/images/wall.jpg">
+            <img alt="wall" src="./images/wall.jpg" />
           </div>
           <div class="pic-container two-wide pic-width">
-            <img alt="Person holding pasta" src="/images/pasta.jpg">
+            <img alt="Person holding pasta" src="./images/pasta.jpg" />
           </div>
         </section>
 
-        <hr>
+        <hr />
 
         <section>
           <div class="header-box">
@@ -73,32 +80,26 @@
           </div>
           <section class="flex beer-flex">
             <div class="beer-container">
-              <a href="/menu/index.html">
-                <img alt="Beer 1" src="images/beer1.jpg" />
-                <div class="beer-text">
-                  Crew Republic
-                </div>
+              <a href="./menu/index.html">
+                <img alt="Beer 1" src="./images/beer1.jpg" />
+                <div class="beer-text">Crew Republic</div>
               </a>
             </div>
             <div class="beer-container">
-              <a href="/menu/index.html">
-                <img alt="Beer 1" src="images/beer2.jpg" />
-                <div class="beer-text">
-                  Elysian Dayglow
-                </div>
+              <a href="./menu/index.html">
+                <img alt="Beer 1" src="./images/beer2.jpg" />
+                <div class="beer-text">Elysian Dayglow</div>
               </a>
             </div>
             <div class="beer-container">
-              <a href="/menu/index.html">
-                <img alt="Beer 1" src="images/beer3.jpg" />
-                <div class="beer-text">
-                  Heineken
-                </div>
+              <a href="./menu/index.html">
+                <img alt="Beer 1" src="./images/beer3.jpg" />
+                <div class="beer-text">Heineken</div>
               </a>
             </div>
           </section>
           <div class="viewmore">
-            <a href="/menu/index.html">View More</a>
+            <a href="./menu/index.html">View More</a>
           </div>
         </section>
 
@@ -107,34 +108,37 @@
         <h2 class="heading">Locations</h2>
         <section>
           <div class="map">
-              <div class="gmap_canvas">
-                <iframe
-                  src="https://maps.google.com/maps?q=5507%20W%2020th%20Ave,%20Edgewater,%20CO%2080214&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  title="Google Maps"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0">
-              </iframe>
-              </div>
-              <div class="gmap_canvas">
-                <iframe
-                  src="https://maps.google.com/maps?q=8172%20S%20Holly%20St,%20Centennial,%20CO%2080122&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  title="Google Maps"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0">
+            <div class="gmap_canvas">
+              <iframe
+                src="https://maps.google.com/maps?q=5507%20W%2020th%20Ave,%20Edgewater,%20CO%2080214&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Google Maps"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              >
               </iframe>
             </div>
-              <div class="gmap_canvas">
-                <iframe
-                  src="https://maps.google.com/maps?q=128%20S%20Main%20St,%20Salt%20Lake%20City,%20UT%2084101&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  title="Google Maps"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0">
+            <div class="gmap_canvas">
+              <iframe
+                src="https://maps.google.com/maps?q=8172%20S%20Holly%20St,%20Centennial,%20CO%2080122&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Google Maps"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              >
+              </iframe>
+            </div>
+            <div class="gmap_canvas">
+              <iframe
+                src="https://maps.google.com/maps?q=128%20S%20Main%20St,%20Salt%20Lake%20City,%20UT%2084101&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Google Maps"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              >
               </iframe>
             </div>
           </div>
@@ -142,21 +146,31 @@
       </main>
       <footer class="footer">
         <div class="footer--images">
-            <a href="https://instagram.com"><img class="footer-img" src="/images/instagram_icon.png" alt="Instagram Icon"></a>
-            <a href="https://twitter.com"><img class="footer-img" src="/images/twitter_icon.png" alt="Twitter Icon"></a>
+          <a href="https://instagram.com"
+            ><img
+              class="footer-img"
+              src="./images/instagram_icon.png"
+              alt="Instagram Icon"
+          /></a>
+          <a href="https://twitter.com"
+            ><img
+              class="footer-img"
+              src="./images/twitter_icon.png"
+              alt="Twitter Icon"
+          /></a>
         </div>
         <div class="footer--links">
-            <a href="/index.html">Home</a>
-            <a href="/menu/">Menu</a>
-            <a href="/reservation/">Reservations</a>
-            <a href="/about/">About Us</a>
-            <a href="/contact/index.html">Contact</a>
-            <a href="/extra/">Extra Stuffs</a>
+          <a href="./index.html">Home</a>
+          <a href="./menu/">Menu</a>
+          <a href="./reservation/">Reservations</a>
+          <a href="./about/">About Us</a>
+          <a href="./contact/index.html">Contact</a>
+          <a href="./extra/">Extra Stuffs</a>
         </div>
         <div class="footer--copy">
-            <p>Copyright © 2021 Samurai Brewery. All Rights Reserved</p>
+          <p>Copyright © 2021 Samurai Brewery. All Rights Reserved</p>
         </div>
-    </footer>
+      </footer>
     </div>
     <script>
       const hamburger = document.querySelector(".ham");
